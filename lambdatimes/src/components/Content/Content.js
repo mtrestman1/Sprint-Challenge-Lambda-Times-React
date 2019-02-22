@@ -30,12 +30,13 @@ export default class Content extends Component {
   };
 
   filterCards = () => {
+    console.log(this.state.selected)
     if(this.state.selected === 'all') {
       return this.state.cards;
       }
     
     else {
-      return this.state.cards.filter(card => card.tab.includes(this.state.tabs))
+      return this.state.cards.filter(card => card.tab === this.state.selected)
          
     }
 
@@ -60,7 +61,7 @@ export default class Content extends Component {
     return (
       <div className="content-container">
         
-        <Tabs tabs={this.state.tabs} selectedTab={this.state.selectedTab} selectTabHandler={this.changeSelected} />
+        <Tabs tabs={this.state.tabs} selectedTab={this.state.selected} selectTabHandler={this.changeSelected} />
         <Cards cards={this.filterCards()} />
       </div>
     );
