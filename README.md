@@ -29,22 +29,35 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+    Proptypes are used to find certain bugs in our code. If a future developer is working with our code it allows them to see the problem. Shows them what the issue is without trying to go through all the code to figure out whats wrong.
+
 - [ ] Describe a life-cycle event in React?
+
+    Lifecycle events in React are the phases in the components life. We have birth, growth and death... or Mounting, updating, and unmounitng. In unmounting, the last phase is called componentDidMount. Inside componentDidMount we can setState and make the component re-render.
+
 - [ ] Explain the details of a Higher Order Component?
+
+An HOC is a function that receives another component as an argument and returns a new component. It allows us to reuse component logic. 
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+
+Vanilla CSS- simple, easy to use. 
+Styled Components- You can write your css directly in JS. 
+
 
 ## Project Setup
 
 Follow these steps to set up your project:
 
 - [ x] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
-- [ ] From within the `lambdatimes` folder run `yarn` and then `yarn start`. This will open your locally hosted application in your browser. Once you are ready move onto the next steps.
-- [ ] Inside the `Content` folder you will find all 5 components that make up the content of the application. The flow goes like this: `Content > Tabs > Tab` and `Content > Cards > Card`. Follow the directions in the `Content` component to get your data ready.
+- [ x] Add your project manager as collaborator on Github.
+- [ x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [ x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x ] Push commits: git push origin `<firstName-lastName>`.
+- [ x] From within the `lambdatimes` folder run `yarn` and then `yarn start`. This will open your locally hosted application in your browser. Once you are ready move onto the next steps.
+- [x ] Inside the `Content` folder you will find all 5 components that make up the content of the application. The flow goes like this: `Content > Tabs > Tab` and `Content > Cards > Card`. Follow the directions in the `Content` component to get your data ready.
 
 Follow these steps for completing your project.
 
