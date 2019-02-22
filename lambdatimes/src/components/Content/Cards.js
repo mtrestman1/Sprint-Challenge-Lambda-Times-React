@@ -7,7 +7,7 @@ const Cards = props => {
     <div className="cards-container">
          {props.cards.map(card => (
 
-           <Card cards={card}/>
+           <Card card={card}/>
 
          ))} 
     </div>
